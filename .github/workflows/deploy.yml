@@ -23,7 +23,7 @@ jobs:
         run: pnpm install
 
       - name: Setup SSH agent for deployment
-        uses: webfactory/ssh-agent@v0.8.1
+        uses: webfactory/ssh-agent@v0.8.0
         with:
           ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY_COMPANY }}
 
