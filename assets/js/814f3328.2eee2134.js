@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkblog=self.webpackChunkblog||[]).push([[472],{5513:e=>{e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"DeAgent Development Log 1","permalink":"/blog/dev-log-1","unlisted":false,"date":"2025-02-15T00:00:00.000Z"}]}')}}]);
