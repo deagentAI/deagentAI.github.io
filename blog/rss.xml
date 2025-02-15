@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>DeagentAI blog Blog</title>
-        <link>https://deagentai.github.io/blog</link>
+        <link>https://blog.deagent.ai/blog</link>
         <description>DeagentAI blog Blog</description>
         <lastBuildDate>Sat, 15 Feb 2025 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
@@ -10,14 +10,14 @@
         <language>en</language>
         <item>
             <title><![CDATA[DeAgent Development Log 1]]></title>
-            <link>https://deagentai.github.io/blog/dev-log-1</link>
-            <guid>https://deagentai.github.io/blog/dev-log-1</guid>
+            <link>https://blog.deagent.ai/blog/dev-log-1</link>
+            <guid>https://blog.deagent.ai/blog/dev-log-1</guid>
             <pubDate>Sat, 15 Feb 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[Currently, large models generally lack deep reasoning capabilities in the Web3 domain. In the DeAgent framework, the large model plays the most crucial role in the Lobe function. Most teams address this issue by either using RAG (Retrieval-Augmented Generation) or adding Web3 data during the fine-tuning phase. However, these methods do not significantly enhance the Lobe's trading and decision-making abilities in the Web3 space.]]></description>
             <content:encoded><![CDATA[<p>Currently, large models generally lack deep reasoning capabilities in the Web3 domain. In the DeAgent framework, the large model plays the most crucial role in the Lobe function. Most teams address this issue by either using RAG (Retrieval-Augmented Generation) or adding Web3 data during the fine-tuning phase. However, these methods do not significantly enhance the Lobe's trading and decision-making abilities in the Web3 space.
 To solve this problem, we have designed a Web3-specific transaction Playground that integrates both Onchain and OffChain environments.</p>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="i-data-collection">I. Data Collection<a href="https://deagentai.github.io/blog/dev-log-1#i-data-collection" class="hash-link" aria-label="Direct link to I. Data Collection" title="Direct link to I. Data Collection">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="1-on-chain-data">(1) On-chain Data<a href="https://deagentai.github.io/blog/dev-log-1#1-on-chain-data" class="hash-link" aria-label="Direct link to (1) On-chain Data" title="Direct link to (1) On-chain Data">​</a></h3>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="i-data-collection">I. Data Collection<a href="https://blog.deagent.ai/blog/dev-log-1#i-data-collection" class="hash-link" aria-label="Direct link to I. Data Collection" title="Direct link to I. Data Collection">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="1-on-chain-data">(1) On-chain Data<a href="https://blog.deagent.ai/blog/dev-log-1#1-on-chain-data" class="hash-link" aria-label="Direct link to (1) On-chain Data" title="Direct link to (1) On-chain Data">​</a></h3>
 <p><strong>1. Mainstream Token Transaction Data Domain</strong></p>
 <ul>
 <li><strong>Data Sources</strong>: Obtain transaction data for mainstream tokens (e.g., BTC, ETH, USDT, etc.) via blockchain explorers (such as Etherscan).</li>
@@ -30,7 +30,7 @@ To solve this problem, we have designed a Web3-specific transaction Playground t
 <li><strong>Data Content</strong>: Includes descriptions of key events, occurrence time, relevant influencing factors, etc. For example, the market reaction before and after Ethereum's merge or the impact of policy changes on the cryptocurrency market.</li>
 <li><strong>Data Format</strong>: Text files storing event descriptions, with fields including event ID, event description, occurrence time, involved tokens, event type (e.g., technical upgrade, policy release).</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2-off-chain-data">(2) Off-chain Data<a href="https://deagentai.github.io/blog/dev-log-1#2-off-chain-data" class="hash-link" aria-label="Direct link to (2) Off-chain Data" title="Direct link to (2) Off-chain Data">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2-off-chain-data">(2) Off-chain Data<a href="https://blog.deagent.ai/blog/dev-log-1#2-off-chain-data" class="hash-link" aria-label="Direct link to (2) Off-chain Data" title="Direct link to (2) Off-chain Data">​</a></h3>
 <p><strong>1. Hot Project Meme Twitter Data Domain</strong></p>
 <ul>
 <li><strong>Data Sources</strong>: Use Twitter API to collect tweets related to popular Web3 projects.</li>
@@ -43,8 +43,8 @@ To solve this problem, we have designed a Web3-specific transaction Playground t
 <li><strong>Data Content</strong>: Includes price fluctuations, trading volume changes, transaction prices, transaction times, and trade direction. For instance, during a market crash, track Bitcoin's price movement from the high to the low.</li>
 <li><strong>Data Format</strong>: Stored in CSV format, with fields including - timestamp, token name, price, trading volume, 24-hour price change.</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="ii-model-training">II. Model Training<a href="https://deagentai.github.io/blog/dev-log-1#ii-model-training" class="hash-link" aria-label="Direct link to II. Model Training" title="Direct link to II. Model Training">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="1-format-training">(1) Format Training<a href="https://deagentai.github.io/blog/dev-log-1#1-format-training" class="hash-link" aria-label="Direct link to (1) Format Training" title="Direct link to (1) Format Training">​</a></h3>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="ii-model-training">II. Model Training<a href="https://blog.deagent.ai/blog/dev-log-1#ii-model-training" class="hash-link" aria-label="Direct link to II. Model Training" title="Direct link to II. Model Training">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="1-format-training">(1) Format Training<a href="https://blog.deagent.ai/blog/dev-log-1#1-format-training" class="hash-link" aria-label="Direct link to (1) Format Training" title="Direct link to (1) Format Training">​</a></h3>
 <p><strong>1. Step-by-Step Thinking Training Domain</strong></p>
 <ul>
 <li><strong>Training Data Construction</strong>: Organize the collected data into training samples in a specific format. For example, construct samples in the following format:<!-- -->
@@ -57,7 +57,7 @@ To solve this problem, we have designed a Web3-specific transaction Playground t
 <li><strong>Gradual Time Window Expansion</strong>: Gradually increase the time window of observed data during the training process. For example, start by training the model to make decisions based on only 1 hour of past data, then gradually expand to data from 1 day or 1 week.</li>
 <li><strong>Multi-Time Scale Integration</strong>: Integrate decisions made by the model over different time windows, allowing the model to consider both short-term and long-term market trends.</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2-trajectory-collection-and-prms--orm-training">(2) Trajectory Collection and PRMs &amp; ORM Training<a href="https://deagentai.github.io/blog/dev-log-1#2-trajectory-collection-and-prms--orm-training" class="hash-link" aria-label="Direct link to (2) Trajectory Collection and PRMs &amp; ORM Training" title="Direct link to (2) Trajectory Collection and PRMs &amp; ORM Training">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2-trajectory-collection-and-prms--orm-training">(2) Trajectory Collection and PRMs &amp; ORM Training<a href="https://blog.deagent.ai/blog/dev-log-1#2-trajectory-collection-and-prms--orm-training" class="hash-link" aria-label="Direct link to (2) Trajectory Collection and PRMs &amp; ORM Training" title="Direct link to (2) Trajectory Collection and PRMs &amp; ORM Training">​</a></h3>
 <p><strong>1. Trajectory Collection Domain</strong></p>
 <ul>
 <li><strong>Data Structured Storage</strong>: During interactions between the model and the Playground environment, store the model's thought process, observed data, and actions taken in a trajectory database. For example:<!-- -->
@@ -77,8 +77,8 @@ To solve this problem, we have designed a Web3-specific transaction Playground t
 <li><strong>Online Reinforcement Learning Integration</strong>: Dynamically combine reinforcement learning algorithms with trajectory data.</li>
 <li><strong>Memory Optimization Strategy</strong>: Optimize the model's memory mechanism to improve its ability to recall past decision-making experiences.</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="iii-evaluation--optimization">III. Evaluation &amp; Optimization<a href="https://deagentai.github.io/blog/dev-log-1#iii-evaluation--optimization" class="hash-link" aria-label="Direct link to III. Evaluation &amp; Optimization" title="Direct link to III. Evaluation &amp; Optimization">​</a></h2>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="1-evaluation-metrics-domain">(1) Evaluation Metrics Domain<a href="https://deagentai.github.io/blog/dev-log-1#1-evaluation-metrics-domain" class="hash-link" aria-label="Direct link to (1) Evaluation Metrics Domain" title="Direct link to (1) Evaluation Metrics Domain">​</a></h3>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="iii-evaluation--optimization">III. Evaluation &amp; Optimization<a href="https://blog.deagent.ai/blog/dev-log-1#iii-evaluation--optimization" class="hash-link" aria-label="Direct link to III. Evaluation &amp; Optimization" title="Direct link to III. Evaluation &amp; Optimization">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="1-evaluation-metrics-domain">(1) Evaluation Metrics Domain<a href="https://blog.deagent.ai/blog/dev-log-1#1-evaluation-metrics-domain" class="hash-link" aria-label="Direct link to (1) Evaluation Metrics Domain" title="Direct link to (1) Evaluation Metrics Domain">​</a></h3>
 <p><strong>1. Trading Profitability Domain</strong></p>
 <ul>
 <li><strong>Profit Calculation</strong>: Calculate the total profit of the model's simulated trading in the Playground environment.</li>
@@ -89,7 +89,7 @@ To solve this problem, we have designed a Web3-specific transaction Playground t
 <li><strong>Thinking Process Quality Rating</strong>: Invite financial experts to rate the model's reasoning process based on criteria such as logical coherence and completeness of factors covered.</li>
 <li><strong>Action-Decision Consistency</strong>: Analyze the consistency between the model's actions and its thought process.</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2-optimization-methods-domain">(2) Optimization Methods Domain<a href="https://deagentai.github.io/blog/dev-log-1#2-optimization-methods-domain" class="hash-link" aria-label="Direct link to (2) Optimization Methods Domain" title="Direct link to (2) Optimization Methods Domain">​</a></h3>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="2-optimization-methods-domain">(2) Optimization Methods Domain<a href="https://blog.deagent.ai/blog/dev-log-1#2-optimization-methods-domain" class="hash-link" aria-label="Direct link to (2) Optimization Methods Domain" title="Direct link to (2) Optimization Methods Domain">​</a></h3>
 <p><strong>1. Weight Adjustment Domain</strong></p>
 <ul>
 <li><strong>Fine-tuning Model Weights</strong>: Based on evaluation results, fine-tune the weights of various layers in the model.</li>
